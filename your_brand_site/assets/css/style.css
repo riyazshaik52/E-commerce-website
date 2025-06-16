@@ -1,0 +1,185 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Topbar styles */
+.topbar {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Navigation */
+.navbar {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffb700;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 200px;
+}
+
+.actions input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 140px;
+}
+
+.btn {
+  background-color: #ffb700;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffa100;
+}
+
+/* Hero Slider */
+.hero-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Categories */
+.categories {
+  padding: 2rem;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+/* Category Labels */
+.item p {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.item:hover p {
+  color: #ffb700;
+}
+
+/* Map section */
+.map {
+  padding: 2rem;
+  text-align: center;
+}
+
+.map h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}                               
